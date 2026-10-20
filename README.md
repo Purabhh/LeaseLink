@@ -17,6 +17,20 @@ LeaseLink revolutionizes property hunting by letting you **swipe through propert
 - **Tenant Applications**: Review interested renters and their information
 - **Match Approval**: Accept or decline applications based on your criteria
 
+## Screenshots
+
+### Renter
+| Browse & swipe | Matches |
+|---|---|
+| ![Renter browsing properties](docs/screenshots/renter-browse.png) | ![Renter matches](docs/screenshots/renter-matches.png) |
+
+### Landlord
+| Dashboard | Pending applications |
+|---|---|
+| ![Landlord dashboard](docs/screenshots/landlord-dashboard.png) | ![Landlord pending applications](docs/screenshots/landlord-applications.png) |
+
+![Landlord applications page](docs/screenshots/landlord-matches.png)
+
 ## Quick Start
 
 ### Prerequisites
