@@ -18,7 +18,13 @@ export class GoogleMapsService {
       }
 
       const data = await response.json();
-      
+
+      // Only a genuine "no match" means the address is bad. Key/billing/quota
+      // errors (REQUEST_DENIED, OVER_QUERY_LIMIT, ...) must not block listings.
+      if (data.status !== 'OK' && data.status !== 'ZERO_RESULTS') {
+        throw new Error(`Google Maps geocode status ${data.status}: ${data.error_message || ''}`);
+      }
+
       return {
         isValid: data.status === 'OK' && data.results.length > 0,
         coordinates: data.results[0]?.geometry?.location || null,
