@@ -48,7 +48,10 @@ export async function setupAuth(app: Express) {
   let callbackURL = "/api/auth/google/callback";
   
   // Handle different deployment environments
-  if (process.env.REPLIT_DEV_DOMAIN) {
+  if (process.env.GOOGLE_CALLBACK_URL) {
+    // Explicit override always wins
+    callbackURL = process.env.GOOGLE_CALLBACK_URL;
+  } else if (process.env.REPLIT_DEV_DOMAIN) {
     // Replit development environment
     callbackURL = `https://${process.env.REPLIT_DEV_DOMAIN}/api/auth/google/callback`;
   } else if (process.env.RAILWAY_STATIC_URL) {
