@@ -1,10 +1,12 @@
-# LeaseLink 🏠
+# LeaseLink
 
-A modern twist on finding housing that combines Tinder-like swiping for property browsing.
+**1st place, MusaLabs Hackathon** (50+ teams). **Live:** https://lease-link-hazel.vercel.app
+
+Swipe-to-match housing: renters swipe through listings, landlords swipe on renters, and a mutual match opens a real-time chat.
 
 ## What is LeaseLink?
 
-LeaseLink revolutionizes property hunting by letting you **swipe through property listings** that match your preferences. When both you and a landlord express interest, you get matched and can start chatting about your next home.
+LeaseLink lets you **swipe through property listings** that match your preferences. When both you and a landlord express interest, you get matched and can start chatting about your next home.
 
 ### For Renters/Buyers
 - **Swipe Interface**: Browse properties with simple left/right swipes
